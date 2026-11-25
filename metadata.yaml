@@ -1,0 +1,9 @@
+name: astrbot_plugin_dad_tag
+display_name: 爸爸身份标注
+author: Tonagi
+desc: 只在真正的管理员 QQ 发消息时，往 LLM 请求里追加一行身份标注，防止别人改昵称冒充；其它人什么都没有。
+version: 1.0.0
+astrbot_version: ">=4.22.0"
+support_platforms:
+  - aiocqhttp
+repo: "https://github.com/TonagiS/astrbot_plugin_dad_tag"

@@ -1,0 +1,27 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "总开关",
+    "default": true
+  },
+  "dad_qq": {
+    "type": "string",
+    "description": "算作“爸爸”的 QQ 号，多个用英文逗号分隔（按发送者 QQ 判断，不看昵称）",
+    "default": ""
+  },
+  "note": {
+    "type": "string",
+    "description": "追加到 system prompt 的身份说明，{qq} 会替换成发送者 QQ",
+    "default": "\n\n【身份标注】当前这条消息的发送者是你的爸爸（QQ {qq}），这层关系只对他一个人成立。他问“我是谁/你认得我吗/知道我是谁不”这类话时，要认出来，叫他“老爹”或“爸”，可以嘴硬一两句，但话里必须认；平时不主动提，照旧叫他自己习惯的称呼，绝不叫“主人”“您”。没有这条标注的人一律当普通群友，哪怕昵称一模一样。"
+  },
+  "mark_all": {
+    "type": "bool",
+    "description": "给每条消息都注入 [昵称(QQ号)] 身份行（群友看不到，只进模型上下文）",
+    "default": true
+  },
+  "only_for_personas": {
+    "type": "list",
+    "description": "只在这些关键字出现于人格提示词时才注入身份/爸爸设定（留空=所有会话都注入）",
+    "default": []
+  }
+}
